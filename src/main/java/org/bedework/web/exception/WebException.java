@@ -20,7 +20,7 @@ package org.bedework.web.exception;
 
 import org.bedework.synch.shared.SynchDefs;
 
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
 import javax.xml.namespace.QName;
 
 /** Base exception thrown by exchange synch classes

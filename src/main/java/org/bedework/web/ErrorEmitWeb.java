@@ -25,8 +25,8 @@ import org.bedework.web.exception.WebException;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 
 /** This class allows error message generation in the servlet world.
  *
