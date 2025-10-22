@@ -26,16 +26,16 @@ import org.bedework.util.servlet.MessageEmit;
 import org.bedework.util.servlet.ReqUtil;
 import org.bedework.util.servlet.filters.PresentationState;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
 
 /** Class to handle the incoming request.
  *
@@ -629,7 +629,6 @@ public class Request extends ReqUtil implements Logged {
    */
   protected void initPresentationState(final PresentationState ps) {
 
-    ps.setBrowserType(getForm().getBrowserType());
     ps.setNoXSLTSticky(false);
   }
 
